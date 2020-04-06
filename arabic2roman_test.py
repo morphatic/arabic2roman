@@ -46,3 +46,35 @@ def describe_an_arabic2roman_program_that():
     assert convert(19)[-2:] == "IX"
     assert convert(124)[-2:] != "IX"
     assert convert(129)[-2:] == "IX"
+
+  def return_V_or_X_if_num_mod_5_is_0():
+    assert convert( 5)[-1] == "V"
+    assert convert(10)[-1] == "X"
+    assert convert(15)[-1] == "V"
+    assert convert(20)[-1] == "X"
+    assert convert(25)[-1] == "V"
+    assert convert(30)[-1] == "X"
+
+  def can_correctly_convert_numbers_1_to_10():
+    assert convert(1) == 'I'
+    assert convert(2) == 'II'
+    assert convert(3) == 'III'
+    assert convert(4) == 'IV'
+    assert convert(5) == 'V'
+    assert convert(6) == 'VI'
+    assert convert(7) == 'VII'
+    assert convert(8) == 'VIII'
+    assert convert(9) == 'IX'
+    assert convert(10) == 'X'
+
+  def can_correctly_convert_numbers_11_to_20():
+    assert convert(11) == 'XI'
+    assert convert(12) == 'XII'
+    assert convert(13) == 'XIII'
+    assert convert(14) == 'XIV'
+    assert convert(15) == 'XV'
+    assert convert(16) == 'XVI'
+    assert convert(17) == 'XVII'
+    assert convert(18) == 'XVIII'
+    assert convert(19) == 'XIX'
+    assert convert(20) == 'XX'
