@@ -15,7 +15,16 @@ Arabic  |  Roman
 13      |  XIII
 14      |  XIV
 15      |  XV
+16      |  XVI
+17      |  XVII
+18      |  XVIII
 19      |  XIX
+20      |  XX
+21      |  XXI
+22      |  XXII
+23      |  XXIII
+24      |  XXIV
+25      |  XXV
 ...
 20      |  XX
 40      |  XL

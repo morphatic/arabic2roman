@@ -78,3 +78,29 @@ def describe_an_arabic2roman_program_that():
     assert convert(18) == 'XVIII'
     assert convert(19) == 'XIX'
     assert convert(20) == 'XX'
+
+  def can_correctly_convert_numbers_21_to_30():
+    assert convert(21) == 'XXI'
+    assert convert(22) == 'XXII'
+    assert convert(23) == 'XXIII'
+    assert convert(24) == 'XXIV'
+    assert convert(25) == 'XXV'
+    assert convert(26) == 'XXVI'
+    assert convert(27) == 'XXVII'
+    assert convert(28) == 'XXVIII'
+    assert convert(29) == 'XXIX'
+    assert convert(30) == 'XXX'
+
+  def can_correctly_convert_numbers_31_to_40():
+    assert convert(31) == 'XXXI'
+    assert convert(32) == 'XXXII'
+    assert convert(33) == 'XXXIII'
+    assert convert(34) == 'XXXIV'
+    assert convert(35) == 'XXXV'
+    assert convert(36) == 'XXXVI'
+    assert convert(37) == 'XXXVII'
+    assert convert(38) == 'XXXVIII'
+    assert convert(39) == 'XXXIX'
+    assert convert(40) == 'XL'
+
+  
