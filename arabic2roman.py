@@ -2,7 +2,7 @@
   A function that takes a positive integer arabic number and
   converts it into its roman numeral equivalent as a string
 """
-def convert(num): # num == 1
+def convert(num):
   # create an empty string variable to hold our eventual output
   roman = ''
 
