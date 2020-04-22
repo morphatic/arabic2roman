@@ -1,3 +1,5 @@
+from math import floor
+
 """
   A function that takes a positive integer arabic number and
   converts it into its roman numeral equivalent as a string
@@ -5,6 +7,45 @@
 def convert(num):
   # create an empty string variable to hold our eventual output
   roman = ''
+
+  ###############
+  # Is the number high enough that we need to use M (1000)?
+  ###############
+  if num / 1000 > 0:
+    # get the number of M's we need
+    m = floor(num/1000)
+    # loop m times and add that number of M's to roman
+    for i in range(m):
+      roman += 'M'
+    # now subtract the part accounted for from our number
+    num = num - (m * 1000)
+
+
+  ###############
+  # Is the number high enough that we need to use D (500)?
+  ###############
+
+
+  ###############
+  # Is the number high enough that we need to use C (100)?
+  ###############
+
+  # is the number >= 90?
+  if num >= 90:
+    # then possibly include a C
+
+  ###############
+  # Is the number high enough that we need to use L (50)?
+  ###############
+
+  # is the number > =40?
+  if num >= 40:
+    # then possibly add an L
+
+
+  ###############
+  # Is the number high enough that we need to use X?
+  ###############
 
   # we need to be able to add X to the beginning of numbers > 10
   if num > 10:
@@ -15,6 +56,9 @@ def convert(num):
   if num > 30:
     roman += 'X'  
 
+  ###############
+  # Handle the V and I part
+  ###############
   # we know that there are patterns that repeat every 5 numbers
   # so, let's figure out where we are in that cycle
   remainderWhenDividingBy5 = num % 5 # modulus operator (%) give us the remainder
