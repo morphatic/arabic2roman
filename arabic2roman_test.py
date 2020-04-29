@@ -103,4 +103,17 @@ def describe_an_arabic2roman_program_that():
     assert convert(39) == 'XXXIX'
     assert convert(40) == 'XL'
 
-  
+  def can_correctly_convert_all_the_numbers():
+    assert convert(50)  == 'L'  
+    assert convert(90)  == 'XC'  
+    assert convert(100) == 'C'  
+    assert convert(110) == 'CX'  
+    assert convert(140) == 'CXL'
+    assert convert(150) == 'CL'
+    assert convert(190) == 'CXC'
+    assert convert(400) == 'CD'
+    assert convert(500) == 'D'
+    assert convert(900) == 'CM'
+    assert convert(1000) == 'M'
+    assert convert(2949) == 'MMCMXLIX'
+    assert convert(4321) == 'MMMMCCCXXI'
